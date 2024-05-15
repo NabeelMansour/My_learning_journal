@@ -1,0 +1,104 @@
+/***** css variables *****/
+
+:root{
+    --small-text: 0.75rem;
+    --mid-text: 1.5rem;
+    --big-text: 2rem;
+    --bold-text: 900;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+body{
+    font-family: "Source Sans 3", sans-serif;
+}
+
+/***** header *****/
+
+.header{
+    min-height: 3.69rem;
+    padding: 1em 0;
+    
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #090909;
+    margin-right: 0.7em;
+}
+
+.logo{
+    color: #0E0E0E;
+}
+
+/***** hero *****/
+
+.hero {
+    background-image: url('./images/article-image-hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.article-hero-title{
+    font-size: var(--big-text);
+}
+
+.article-hero time,
+.nav a{
+    font-size: var(--small-text);
+}
+
+.article-hero{
+    padding: 6em 0 1.5em 0;
+}
+
+/* Section Blog*/
+
+.blog{
+    margin: 2em 0 2.5em 0;
+}
+
+.blog img{
+    margin-bottom: .5em;
+}
+
+.article-blog-title{
+    font-weight: var(--bold-text);
+    font-size: var(--mid-text);
+    margin: .2em 0;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.btn .view-btn{
+    border: none;
+    font-size: 1em;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: var(--bold-text);
+}
