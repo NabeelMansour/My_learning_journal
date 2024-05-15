@@ -7,33 +7,46 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>My learning journal</title>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
+     <!-- Header -->
+     <header class="header">
         <div class="wrapper">
         <nav class="nav">
             <img src="images/logo.png" alt="logo" class="logo">
             <ul>
-                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
             </ul>
         </nav>
     </div>
     </header>
     <main>
-        <!-- Section Hero -->
-        <section class="hero">
+        <!-- Article Journey -->
+        <section class="section-journey">
             <div class="wrapper">
-                <article class="article-hero">
-                    <time datetime="2018-07-07">July 23, 2022</time>
+                <article class="article-journey">
+                    <time datetime="2018-07-07" class="article-journey-date">July 23, 2022</time>
                     <h1 class="article-hero-title">My new journey as a bootcamp student</h1>
-                    <p class="article-hero-text">After several months of learning in the Frontend Developer Career Path,
-                       I've made the big jump over to the bootcamp to get expert code reviews of
-                       my Solo Projects projects and meet like-minded peers. 
-                    </p>     
+                    <p class="article-hero-text">After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers. 
+                    </p>
+                    <img src="./images/article-image-hero.png" alt="hero-image" class="article-journey-image">  
+                    <div class="article-commited">
+                        <h3>How I stay committed to learning</h3>
+                        <p class="article-commited-text">I like to think of myself as a lifelong learner. I used to spend hours and hours learning, then try to create simple projects using what I learned or work new techniques into existing projects.</p>
+                        <p class="article-commited-text">While that was fun, I felt like it would be helpful to share what I was learning and most things about my journey with the world.</p>
+                    </div>
+                    <div class="article-started">
+                        <h3>How I got started</h3>
+                        <p class="article-started-text">I started simple and gradually grew my learning journal site. I would take notes about what I was learning. After each learning session, I'd use my notes to not only reflect on what I learned but also write short summaries of what I learned using my own words.</p>
+                        <p class="article-started-text">That helped me grok what I was learning, and I realized that posting my learning summaries was also helping others learn and stay motivated.</p>
+                    </div>    
                 </article>
+            </div>
+            <!-- view more button -->
+            <div class="recent-post-wrap">
+                <p class="recent-post">Recent posts</p>
             </div>
         </section>
         <!-- Section Blog One -->
@@ -41,7 +54,7 @@
             <div class="wrapper">
                 <article class="article-blog-one">
                     <img src="./images/article-image-03.png" alt="blog-image">
-                    <time datetime="2018-07-07">July 23, 2022</time>
+                    <time datetime="2018-07-07" class="date">July 23, 2022</time>
                     <h1 class="article-blog-title">Blog one</h1>
                     <p class="article-blog-text">I'm exited to start a new learning journey as a Scrimba
                         Bootcamp student! After several months of learning in
@@ -55,7 +68,7 @@
             <div class="wrapper">
                 <article class="article-blog-two">
                     <img src="./images/article-image-02.png" alt="blog-image">
-                    <time datetime="2018-07-07">July 23, 2022</time>
+                    <time datetime="2018-07-07" class="date">July 23, 2022</time>
                     <h1 class="article-blog-title">Blog two</h1>
                     <p class="article-blog-text">
                       I'm exited to start a new learning journey as a Scrimba
@@ -70,7 +83,7 @@
             <div class="wrapper">
                 <article class="article-blog-three">
                     <img src="./images/article-image-01.png" alt="blog-image">
-                    <time datetime="2018-07-07">July 23, 2022</time>
+                    <time datetime="2018-07-07" class="date">July 23, 2022</time>
                     <h1 class="article-blog-title">Blog three</h1>
                     <p class="article-blog-text">I'm exited to start a new learning journey as a Scrimba
                         Bootcamp student! After several months of learning in
@@ -78,12 +91,8 @@
                     </p>     
                 </article>
             </div>
-            <!-- view more button -->
-            <div class="btn">
-                <button class="view-btn">View More</button>
-            </div>
         </section>
-        
+
         <!-- Footer -->
         <footer class="footer">
             <div class="wrapper">

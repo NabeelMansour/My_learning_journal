@@ -1,10 +1,11 @@
-/***** css variables *****/
+/***** universal Styles *****/
 
 :root{
     --small-text: 0.75rem;
     --mid-text: 1.5rem;
     --big-text: 2rem;
     --bold-text: 900;
+    --content-text-color: #505050;
 }
 
 *{
@@ -16,6 +17,13 @@
 .wrapper{
     width: 90vw;
     margin: 0 auto;
+}
+
+.footer{
+    font-size: var(--small-text);
+    text-align: center;
+    background-color: #202020;
+    padding: 3em 0;
 }
 
 body{
@@ -44,7 +52,7 @@ body{
 .nav a{
     text-decoration: none;
     color: #090909;
-    margin-right: 0.7em;
+    padding-left: 2em;
 }
 
 .logo{
@@ -57,6 +65,7 @@ body{
     background-image: url('./images/article-image-hero.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     color: #fff;
 }
 
@@ -73,7 +82,7 @@ body{
     padding: 6em 0 1.5em 0;
 }
 
-/* Section Blog*/
+/* Section Blogs */
 
 .blog{
     margin: 2em 0 2.5em 0;
@@ -81,6 +90,8 @@ body{
 
 .blog img{
     margin-bottom: .5em;
+    display: block;
+    width: 100%;
 }
 
 .article-blog-title{
@@ -92,7 +103,7 @@ body{
 .btn{
     display: flex;
     justify-content: center;
-    margin-bottom: 2em;
+    margin: 2em 0;
 }
 
 .btn .view-btn{
@@ -101,4 +112,74 @@ body{
     text-decoration: underline;
     cursor: pointer;
     font-weight: var(--bold-text);
+    background: none;
+}
+
+.footer-journal-text{
+    color: #ECECEC;
+    margin-bottom: .5em;
+    font-weight: var(--bold-text);
+}
+
+.footer-journal-copyright{
+    color: #d7d7d7;
+}
+
+
+/* Blog Page Styles */
+
+.section-journey{
+    padding: 2.5em 0 1.5em 0;
+}
+
+.article-journey .article-journey-image{
+    display: block;
+    width: 100%;
+    height: 191px;
+    object-fit: none;
+    object-position: top;
+    margin: 2em 0;
+}
+
+.article-hero-title{
+    margin: 0.5em 0;
+    line-height: 1;
+}
+
+.article-commited-text,
+.article-started-text{
+    margin: 1em 0;
+    color: var(--content-text-color);
+}
+
+.article-blog-title{
+    margin: 0 0 0.2em 0;
+}
+
+.blog .date{
+    display: block;
+    padding: 0.4em 0;
+}
+
+.recent-post-wrap{
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: var(--bold-text);
+}
+
+.blog .article-blog-one img{
+    margin-top: -2em;
+}
+
+/* About Page Styles */
+
+.nabeel{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.article-about-text{
+    margin-bottom: 2.5em;
 }
