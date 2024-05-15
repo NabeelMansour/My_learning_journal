@@ -167,7 +167,7 @@ body{
     font-weight: var(--bold-text);
 }
 
-.blog .article-blog-one img{
+.article-blog-image{
     margin-top: -2em;
 }
 
