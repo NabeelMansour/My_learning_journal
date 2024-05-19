@@ -4,7 +4,7 @@ const view = document.querySelector('#view-btn');
 view.addEventListener('click', function(){
     view.innerHTML = ''
     main.innerHTML += `
-    <section class="blog-one blog">
+    <section class="blog-one blog view">
     <div class="wrapper">
         <article class="article-blog-one">
             <img src="./images/blog-image-03.png" alt="blog-image">
@@ -16,9 +16,7 @@ view.addEventListener('click', function(){
             </p>     
         </article>
     </div>
-</section>
-<!-- Section Blog Two -->
-<section class="blog-two blog">
+
     <div class="wrapper">
         <article class="article-blog-two">
             <img src="./images/blog-image-01.png" alt="blog-image">
@@ -31,9 +29,7 @@ view.addEventListener('click', function(){
             </p>     
         </article>
     </div>
-</section>
-<!-- Section Blog Three -->
-<section class="blog-three blog">
+    
     <div class="wrapper">
         <article class="article-blog-three">
             <img src="./images/blog-image-02.png" alt="blog-image">

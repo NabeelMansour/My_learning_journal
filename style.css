@@ -15,7 +15,8 @@
 }
 
 .wrapper{
-    width: 90vw;
+    width: 95vw; 
+    max-width: 979px;
     margin: 0 auto;
 }
 
@@ -30,18 +31,27 @@ body{
     font-family: "Source Sans 3", sans-serif;
 }
 
+main,
+footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+
 /***** header *****/
 
 .header{
-    min-height: 3.69rem;
-    padding: 1em 0;
-    
-}
-
-.nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.nav{
+    min-height: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav ul{
@@ -52,7 +62,7 @@ body{
 .nav a{
     text-decoration: none;
     color: #090909;
-    padding-left: 2em;
+    padding-left: 3em 0 0 0;
 }
 
 .logo{
@@ -67,10 +77,19 @@ body{
     background-size: cover;
     background-position: center;
     color: #fff;
+    min-height: 300px;
+    padding: 2em 0;
+    width: 95vw;
 }
 
 .article-hero-title{
+    margin: 0.5em 0;
+    line-height: 1;
     font-size: var(--big-text);
+}
+
+.article-hero{
+    padding: 0 1em;
 }
 
 .article-hero time,
@@ -78,26 +97,32 @@ body{
     font-size: var(--small-text);
 }
 
-.article-hero{
-    padding: 6em 0 1.5em 0;
-}
-
 /* Section Blogs */
+
+main{
+    min-height: calc(100vh - 3.69rem);
+}
 
 .blog{
     margin: 2em 0 2.5em 0;
 }
 
 .blog img{
-    margin-bottom: .5em;
+    margin: 0.5em 0 2em 0;
     display: block;
     width: 100%;
+    min-height: 232px;
+    object-fit: cover;
 }
 
 .article-blog-title{
     font-weight: var(--bold-text);
     font-size: var(--mid-text);
     margin: .2em 0;
+}
+
+.article-blog-text{
+    margin-bottom: 1.5em;
 }
 
 .btn{
@@ -141,11 +166,6 @@ body{
     margin: 2em 0;
 }
 
-.article-hero-title{
-    margin: 0.5em 0;
-    line-height: 1;
-}
-
 .article-commited-text,
 .article-started-text{
     margin: 1em 0;
@@ -184,4 +204,49 @@ body{
 
 .article-about-text{
     margin-bottom: 2.5em;
+}
+
+.view{
+    margin-top: -6em;
+}
+
+@media (min-width: 968px){
+    
+    .hero{
+        background-position: 0px -100px;
+        min-height: 488px;
+        max-width: 979px;
+        margin-top: 1em;
+    }
+
+    .article-blog-one,
+    .article-blog-two,
+    .article-blog-three{
+        display: grid;
+    }
+    
+    .blog{
+        display: flex;
+        justify-content: space-between;
+        margin: 50px auto;
+        column-gap: 30px;
+        max-width: 979px;
+    }
+    .article-hero{
+        flex-direction: column; 
+        max-width: 657px;
+        margin-left: 2em;
+    }
+    .article-hero time{
+        margin-top: 180px;
+    }
+
+    .footer{
+        max-width: 979px;
+        margin: 0 auto;
+    }
+
+    .view{
+        margin-top: -6em;
+    }
 }
