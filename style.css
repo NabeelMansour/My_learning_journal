@@ -15,7 +15,7 @@
 }
 
 .wrapper{
-    width: 95vw; 
+    width: 90vw; 
     max-width: 979px;
     margin: 0 auto;
 }
@@ -25,6 +25,7 @@
     text-align: center;
     background-color: #202020;
     padding: 3em 0;
+    width: 100%;
 }
 
 body{
@@ -75,11 +76,11 @@ footer{
     background-image: url('./images/article-image-hero.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     color: #fff;
     min-height: 300px;
     padding: 2em 0;
-    width: 95vw;
+    /* width: 95vw; */
 }
 
 .article-hero-title{
@@ -160,8 +161,8 @@ main{
 .article-journey .article-journey-image{
     display: block;
     width: 100%;
-    height: 191px;
-    object-fit: none;
+    height: 488px;
+    object-fit: cover;
     object-position: top;
     margin: 2em 0;
 }
@@ -183,7 +184,7 @@ main{
 
 .recent-post-wrap{
     text-align: center;
-    margin-top: 2rem;
+    margin: 2rem 0 -1.5em 0;
     font-weight: var(--bold-text);
 }
 
@@ -195,11 +196,13 @@ main{
 
 .nabeel{
     display: block;
-    margin-left: -60px;
+    margin-left: 0;
     border-radius: 50%;
-    width: 200px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
+    border: 2px solid;
+    background-color: #FAF0E6;
 }
 
 .article-about-text{
@@ -211,6 +214,14 @@ main{
 }
 
 @media (min-width: 968px){
+
+    .article-journey h1{
+        font-size: 2.25em;
+    }
+
+    .article-journey h3{
+        font-size: 1.25em;
+    }
     
     .hero{
         background-position: 0px -100px;
@@ -241,6 +252,11 @@ main{
         margin-top: 180px;
     }
 
+    .article-journey-image{
+        display: block;
+        width: 100%;
+    }
+
     .footer{
         max-width: 979px;
         margin: 0 auto;
@@ -248,5 +264,33 @@ main{
 
     .view{
         margin-top: -6em;
+    }
+
+    .about-section{
+        margin-top: 1em;
+    }
+
+    .article-hero-title{
+        margin-top: 1em;
+    }
+
+    .article-journey-header{
+        display: flex;
+        gap: 1.5em;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+    .article-journey-header-content{
+        max-width: 764px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .journey-articles{
+        width: 844px;
+        margin: 0 auto;
+    }
+    .nav a{
+        font-size: 1rem;
     }
 }
